@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos a Freezate</title>
+    <link rel="website icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="encabezado">
+            <img src="images/logo.png" alt="logo freezate">
+            <h1>Freezate</h1>
+        </header>
+        <nav class="barra-navegacion">
+            <button id="btn-menu">🍴 menú 🍴</button>
+            <ul class="menu">
+                <a href="index.html"><li>Inicio</li></a>
+                <a href="html/entradas.html" style="text-decoration: none;"><li>Entradas</li></a>
+                <a href="html/principales.html"><li>Principales</li></a>
+                <a href="html/postres.html"><li>Postres</li></a>
+            </ul>
+        </nav>
+        <aside>
+            <button id="btn-oscuro" ><img src="images/oscuro.png" alt="swich-apagar" ></button>
+            <button id="btn-claro" ><img src="images/claro.png" alt="swich-encender" ></button>
+        </aside>
+        <article class="principal">
+            <section class="historia">
+                <h2>Historia de nuestro emprendimiento</h2>
+                <p>Siempre fuimos amantes de la cocina casera. Nos recuerda momentos de nuestra infancia, cocinando con nuestras abuelas o nuestras madres.
+                Esas recetas familiares han pasado de generación en generación y la idea de revivir esas tradiciones y compartirlas con mucha mas gente nos dio el empujoncito que necesitábamos.
+                Así nació "Freezate", un emprendimiento familiar dedicado a elaborar comida freezada casera. Nuestro propósito es poder llevar una alternativa fresca, casera y saludable a tu mesa todos los días, utilizando ingredientes naturales y recetas tradicionales para que vos también puedas volver a la infancia.
+                ¿Te imaginaste alguna vez podes comer comida casera sin conservantes en sólo 20 minutos⏰, sin compras anticipadas, sin esperar delivery, sin llamar por teléfono? <span>¡¡ahora es posible!!</span></p>
+                <p>Te proponemos viandas hechas por nosotros para tener en el freezer de tu casa, siempre a mano. Vas a poder sentarte a la mesa en 20' a disfrutar de tu almuerzo o tu cena simplemente usando una ollita, el horno o un microondas. Venimos a facilitarte la dificil tarea del <span>¿qué comemos hoy?</span> Haciendo que comas alimentos de verdad, sin ningún conservante, como todo lo hecho en casa 💛
+                La comida es amor, somos <span>freezate</span></p>
+                <span class="resaltado">Ahora decidimos dejarte las recetas de nuestras preparaciones para que vos también tengas la posibilidad de preparar comidas ricas y caseras. Pero si querés ahorrar tiempo...tenés Freezate. Te esperamos</span>
+                <h2>Ventajas del envasado a vacío</h2>
+                <img class="envasados" src="images/muestras.gif" alt="" >
+                <p>¿Conocías los beneficios del envasado al vacío? El sistema consiste en retirar el oxígeno de los alimentos para lograr una mejor conservación de los mismos, acá te mostramos algunos:
+                    <ol>
+                        <li>Mayor duración de conservación: Al eliminar el oxígeno del envase, se reduce la proliferación de microorganismos que causan la descomposición de los alimentos, lo que prolonga su vida útil.</li>
+                        <li>Preservación de frescura y sabor: Al evitar la oxidación, los alimentos mantienen mejor su sabor, textura y calidad nutricional original durante más tiempo.</li>
+                        <li>Reducción del desperdicio de alimentos: Al extender la vida útil de los alimentos, se reduce la cantidad de comida que se echa a perder, lo que contribuye a combatir el desperdicio alimentario.</li>
+                        <li>Ahorro de espacio: Los alimentos envasados al vacío ocupan menos espacio en el congelador, ya que se eliminan el aire y los envases voluminosos.</li>
+                        <li>Preparación de comidas anticipadas: El envasado al vacío permite preparar comidas con anticipación y almacenarlas de manera segura en el refrigerador o congelador hasta que estén listas para ser consumidas.</li>
+                        <li>Protección contra la contaminación: Al eliminar el oxígeno, se reduce la posibilidad de que los alimentos se contaminen con bacterias u otros microorganismos presentes en el aire.</li>
+                        <li>Mejora del transporte y almacenamiento: El envasado al vacío puede facilitar el transporte y el almacenamiento de alimentos, ya que reduce el riesgo de deterioro durante el manejo y el almacenamiento.</li>
+                    </ol>
+                Venimos a traerte a tu hogar comida hecha en casa, sin conservantes, cuidando al alimento en todas las etapas del proceso para que puedas disfrutar cualquier dia a cualquier hora. Sin pasar tiempo en la cocina y sin demoras.
+                Somos <span>freezate</span> ❄️🍽</p>
+            </section>
+            <section class="formulario">
+                <form id="formulario_contacto">
+                    <h3>Unite a nosotros</h3>
+                    <label for="nombreyapellido">Nombre y Apellido</label>
+                        <input type="text" id="nombreyapellido" placeholder="Por ej.: Jorge Ramirez">
+                    <label for="telefono">Número de teléfono</label>
+                        <input type="number" id="telefono" placeholder="Cod. de área + número">
+                    <label for="correo">E-mail</label>
+                        <input type="email" id="correo" placeholder="correo@abc.com">
+                    <label for="sugerencia">Sugerinos alguna receta</label>
+                        <textarea rows="8" id="sugerencia" placeholder="Me gustaria que agreguen..."></textarea>
+                    <p id="respuesta_captcha"></pc>
+                </form>
+                <article class="validar_captcha">
+                    <div class="envio_formulario">
+                        <button id="btn-enviar">Enviar</button>
+                        <button id="btn-enviarx3"> Enviar X3</button>
+                    </div>
+                    <h4>Ingrese los caracteres de la imagen para poder enviar el formulario</h4>
+                    <img src="" alt="logo captcha" id="img-captcha">
+                        <input type="text" id="captcha">
+                    <button id="btn-validar"> Validar</button>
+                </article>
+            </section>
+        </article>
+        <form id="edicion_formulario" class="oculto" action="">
+                <h2>Modificar</h2>
+                <input id="editar_id" type="hidden" name="id" required >
+                <label for="nombre">Nombre:</label>
+                <input id="editar_nombre" type="text" name="nombre" required >
+                <label for="telefono">Teléfono:</label>
+                <input id="editar_telefono" type="text" name="telefono" required >
+                <label for="correo">Correo:</label>
+                <input id="editar_correo" type="email" name="correo" required >
+                <label for="comentario">Receta:</label>
+                <input id="editar_receta" type="text" name="receta" required >
+                <button id="btn-modificar">Modificar</button>
+        </form>
+        <section class="buscador">
+            <label for="input-buscar">Buscar:</label>
+            <input id="input-buscar" type="text" placeholder="Buscar...">
+            <label for="select-columna"> En:</label>
+            <select id="select-columna">
+                <option value="0">Nombre y Apellido</option>
+                <option value="1">Número de teléfono</option>
+                <option value="2">Correo Electrónico</option>
+                <option value="3">Receta sugerida</option>
+            </select>
+        </section>
+        <article class="scroll_tabla">
+            <table class="tabla_dinamica">
+                <thead>
+                    <tr>
+                        <th>Nombre y Apellido</th>
+                        <th>Número de teléfono</th>
+                        <th>Correo Electrónico</th>
+                        <th>Receta sugerida</th>
+                        <th>Editar</th>
+                        <th>Borrar</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpo_tabla">
+                </tbody>
+            </table>
+        </article>
+        <section id="paginacion">
+        </section>
+        <footer class="pie">
+            <h4>Contactanos </h4>
+            <img src="images/logo.png" alt="logo freezate" >
+            <p>📫 freezate@gmail.com</p>
+            <p>📱 2494-248133</p>
+            <a href="https://www.instagram.com/freezate_/"><img src="images/logo instagram.png" alt="logo instagram"  ></a>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/tabla_dinamica.js"> </script>
+</body>
+</html>

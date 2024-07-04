@@ -1,0 +1,294 @@
+/*---------------Contenedor---------------*/
+
+.container {
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.barra-navegacion,.modo-claroscuro, aside{
+    background-color: rgba(78, 78, 247, 0.356);
+}
+
+/*---------------Encabezado---------------*/
+
+.encabezado{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    font-size: 25px;
+    background-color: rgba(137, 43, 226, 0.555);
+    text-shadow: 5px 5px rgba(17, 17, 209, 0.623);
+    justify-content:last baseline;
+    color: rgba(15, 240, 240, 0.651);
+}
+.encabezado img{
+    width: 150px;
+}
+
+/*---------------Navegador---------------*/
+
+.barra-navegacion {
+    display: flex;
+    flex-direction:column
+}
+.menu{
+    display:none;
+}
+.mostrar-menu {
+    padding-left:0 ;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.menu li, a{
+    list-style-type: none;
+    color:inherit;
+    border-radius: 2vh;
+    text-decoration: none;
+}
+.menu li:hover {
+    background-color: rgb(43, 4, 58);
+    color: white;
+}
+
+#btn-menu{
+    border: none;
+    background-color: rgba(137, 43, 226, 0.555);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*---------------Aside---------------*/
+
+aside{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#btn-claro{
+    display: none;
+}
+#btn-oscuro, #btn-claro{
+    border: none;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+/*---------------Main---------------*/
+
+.receta img, .principal img{
+    float: right;
+    margin-right:20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    filter: drop-shadow( 10px 10px 10px rgba(65, 33, 65, 0.336));
+}
+.receta img{
+    width: 330px;
+}
+
+.principal{
+    grid-area: historia;
+    text-align: justify;
+    background-color: rgba(0, 0, 102, 0.158);
+}
+span{
+    text-transform: uppercase;
+}
+.resaltado {
+    color: rgb(194, 126, 0);
+    font-style: oblique;
+    text-transform: initial;
+}
+.envasados{
+    width: 200px;
+}
+
+/*---------------Formulario---------------*/
+
+#formulario_contacto, .validar_captcha {
+    width: 300px;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+.validar_captcha {
+    background: linear-gradient(to bottom, #6129667e, rgba(137, 43, 226, 0.555), #ccc);
+    border-image: linear-gradient(to bottom, rgba(137, 43, 226, 0.555) , #fff,#6129667e) 10;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+}
+#formulario_contacto {
+    background: linear-gradient(to bottom, #ccc, rgba(137, 43, 226, 0.555), #6129667e);
+    border-image: linear-gradient(to bottom, #6129667e, #fff, rgba(137, 43, 226, 0.555)) 10;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+}
+#editar_nombre, #editar_telefono, #editar_correo,
+#editar_receta,#nombreyapellido,#telefono,#correo,#input-buscar{
+    border-radius: 20px;
+}
+#sugerencia{
+    resize:none;
+}
+#btn-enviar, #btn-enviarx3, #btn-validar, #btn-modificar {
+    border-radius: 100px;
+    padding: 5px;
+    margin: 10px;
+    color: blue;
+    font-weight: bold;
+    background-color: rgba(255, 189, 47, 0.753);
+}
+.btnEdit, .btnEliminar{
+    background-color: rgba(255, 255, 255, 0);
+    border: none
+}
+.envio_formulario{
+    display:none;
+}
+.validar_captcha{
+    display: flex;
+    flex-direction: column;
+}
+.oculto{
+    display: none;
+}
+.formulario{
+    grid-area: formulario;
+    text-align: center;
+}
+
+/*---------------Tabla---------------*/
+
+.equivalencias{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(137, 43, 226, 0.322);
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.tabla_equivalencias {
+    width:70%;
+    text-align: center;
+}
+table, th, tr , td {
+border-radius: 10px;
+background-color: rgba(127, 255, 212, 0.219);
+}
+th {
+    background-color: rgba(78, 78, 247, 0.356);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.tabla_dinamica{
+    align-items: center;
+    text-align: center;
+    border-collapse: collapse;
+    width: 80%;
+    
+}
+.scroll_tabla{
+    overflow-x: auto;
+    margin-left: 15%;
+}
+.buscador{
+    text-align: center;
+    margin: 10px;
+}
+#paginacion{
+    text-align: center;
+    margin: 10px;
+}
+#anterior, #siguiente{
+    margin-top: 20px;
+    border-radius: 10px;
+    color: inherit;
+    background-color: rgba(78, 78, 247, 0.356);
+}
+#input-buscar, #select-columna{
+    margin: 10px;
+}
+.formulario_administrador{
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    margin-left: 10px;
+    width: 300px;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #54a0e87e;
+    background: linear-gradient(to bottom, #ccc, rgba(137, 43, 226, 0.555), #6129667e);
+    border-image: linear-gradient(to bottom, #6129667e, #fff, rgba(137, 43, 226, 0.555)) 10;
+    border: 10px solid transparent;
+}
+
+/*---------------Footer---------------*/
+.pie{
+    padding: 5px;
+    text-align: center;
+    font-weight:bold;
+    background-color: rgba(78, 78, 247, 0.356);
+}
+.pie img{ width: 50px;}
+
+/*---------------Cambios para modo oscuro---------------*/
+
+.modo-oscuro{
+    background-color: rgba(4, 36, 30, 0.863);
+    color: antiquewhite;
+    .tabla_equivalencias{
+        color: antiquewhite;
+    }
+    #btn-menu{
+        color:antiquewhite;
+    }
+    .resaltado{
+        color: rgb(255, 216, 132);
+    }
+}
+
+/* ----- Solo para pantallas superiores a 660px ----- */
+
+@media only screen and (min-width: 660px) {
+
+    .principal{
+        display: grid;
+        grid-template-rows: 20fr 1fr;
+        grid-template-areas: 
+        "historia formulario";
+        column-gap: 20px;
+    }
+
+    .barra-navegacion .menu {
+        padding-left:30px;
+        font-style: italic;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .formulario_contacto{
+    margin: 30px;
+    }
+
+    #btn-menu{
+    display:none
+    }
+.formulario_administrador{
+        width: 97%;
+        flex-direction: row;
+        column-gap: 20px;
+        margin-left: 1%;
+}
+}
